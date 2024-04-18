@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #101820; /* Dark blue background */
+    font-family: "Roboto Condensed", sans-serif;
+    color: #f0f0f0; /* Light gray text color */
+}
+
+#view {
+    margin-top: 30px;
+}
+
+#mazeContainer {
+    top: 15px;
+    opacity: 0;
+    display: inline-block;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #f0f0f0; /* Light gray background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow */
+}
+#mazeContainer #mazeCanvas {
+    margin: 0;
+    display: block;
+    border: solid 2px #101820; /* Dark blue border */
+    height: 400px;
+}
+input, select {
+    cursor: pointer;
+    background-color: #FEE715; /* Yellow background */
+    height: 45px;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #101820; /* Dark blue text color */
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    appearance: none;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+input:hover, select:hover {
+    background-color: #ffda47; /* Lighter yellow on hover */
+}
+input:active, select:active {
+    background-color: #e5c900; /* Darker yellow on active */
+}
+input:focus, select:focus {
+    outline: none;
+}
+.custom-select {
+    display: inline-block;
+}
+.custom-select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: 125px center;
+}
+
+/*message after winning*/
+#Message-Container {
+    visibility: hidden;
+    color: #101820; /* Dark blue text color */
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(254, 231, 21, 0.3); /* Light yellow background with transparency */
+    z-index: 1;
+}
+#Message-Container #message {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+#page {
+    text-align: center;
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+#page #menu {
+    margin: auto;
+    padding: 10px;
+    height: 65px;
+    box-sizing: border-box;
+}
+#page #menu h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 3.2rem;
+    color: #FEE715; /* Yellow heading color */
+}
+#page #view {
+    position: absolute;
+    top: 65px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+}
+.border {
+    border: 10px #FEE715 solid; /* Yellow border */
+    border-radius: 10px;
+}
+
+#instructions {
+    margin-top: 425px;
+}
+ 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 400px) {
+    input, select {
+        width: 120px;
+    }
+}
